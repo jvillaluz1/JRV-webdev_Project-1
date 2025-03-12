@@ -7,10 +7,37 @@ body {
     color: #333;
 }
 
+/* Navigation Bar */
+nav {
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
 /* Header Styles */
 h1, h2 {
     text-align: center;
-    color: #333;
+    color: var(--primary-color);
 }
 
 /* Styling for Links and List */
