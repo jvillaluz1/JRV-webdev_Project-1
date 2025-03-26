@@ -7,81 +7,26 @@
   box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
   font-family: 'Press Start 2P', 'Trebuchet MS', sans-serif;
   line-height: 1.6;
   background-color: #2b3d23;
   color: #ffd000;
   min-height: 100vh;
-  padding: 2rem;
+  padding: 20px;
 }
 
 /* Header Styling */
-header {
-  width: 100%;
-  background-color: #333;
-  padding: 1rem 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  display: flex; /* Added to make header a flex container */
-  justify-content: center; /* Center the nav within the header */
-}
-
-nav {
-  width: 100%;
-  max-width: 1200px; /* Added to limit nav width on large screens */
-  display: flex; /* Added to make nav a flex container */
-  justify-content: center; /* Center the ul within the nav */
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center; /* Ensure li elements are centered */
-  align-items: center; /* Vertically center the links */
-  width: 100%; /* Ensure ul takes full width of nav */
-  flex-wrap: wrap; /* Allow wrapping for long link text */
-}
-
-nav ul li {
-  margin: 0 2rem;
-}
-
-nav ul li a {
-  color: #ffd000;
-  text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  padding: 0.5rem;
-  transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-  background-color: #ffd000;
-  color: #333;
-  border-radius: 5px;
-}
-
-/* Main Content Styling */
-main {
-  margin-top: 5rem; /* Added space for fixed header */
-  padding: 2rem 10%;
-}
-
 h1, h2, h3 {
   text-align: center;
   color: #ffd000;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  margin-bottom: 20px;
 }
 
 h1 {
   font-size: 2.5em;
+  margin-top: 40px;
 }
 
 h2 {
@@ -93,17 +38,17 @@ h2 {
 h3 {
   font-size: 1.5em;
   padding-bottom: 8px;
-  margin-top: 1rem;
+  margin-top: 15px;
 }
 
 /* Paragraph Styling */
 p {
-  font-size: 1rem;
+  font-size: 1em;
   margin: 15px auto;
   max-width: 900px;
   text-align: justify;
   line-height: 1.8;
-  padding: 1rem;
+  padding: 10px;
   background-color: rgba(249, 177, 18, 0.1);
   border-radius: 8px;
 }
@@ -118,45 +63,97 @@ img {
   border: 5px solid #ffd000;
 }
 
+/* Navigation Bar Styling */
+nav {
+	background-color: #333;
+	margin-bottom: 40px;
+	padding: 10px 0;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	overflow: hidden;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #ffd000;
+	text-decoration: none;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	border-bottom: 2px solid transparent;
+	padding: 10px 15px;
+	transition: border-bottom 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+	border-bottom: 2px solid #ffd000;
+	background-color: #444;
+}
+
+/* Clearfix for nav to ensure elements are contained */
+nav::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 /* List Styling */
 ul {
-  list-style-type: none;
-  margin: 15px auto;
-  max-width: 900px;
-  padding: 10px;
-  background-color: rgba(249, 177, 18, 0.1);
-  border-radius: 8px;
+	list-style-type: none;
+	margin: 15px auto;
+	max-width: 900px;
+	padding: 10px;
+	background-color: rgba(249, 177, 18, 0.1);
+	border-radius: 8px;
 }
 
 ul li {
-  margin-bottom: 10px;
-  padding-left: 20px;
-  position: relative;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	position: relative;
 }
 
 ul li::before {
-  content: '•';
-  color: #ffd000;
-  position: absolute;
-  left: 0;
+	content: '*';
+	color: #ffd000;
+	position: absolute;
+	left: 0;
 }
 
-/* Specific List ID Styles */
+/* Bullet pointed list styling */
 #bul1, #bul2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #bul1 li, #bul2 li {
-  margin: 10px 0;
-  text-align: center;
+	margin: 10px 0;
+	text-align: center;
+}
+
+/* Styling for YouTube embed */
+iframe {
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #ffd000;
+  border-radius: 8px;
 }
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
   body {
-    padding: 1rem;
+    padding: 10px;
   }
 
   h1 {
@@ -171,11 +168,8 @@ ul li::before {
     font-size: 1.5em;
   }
 
-  nav ul {
-    flex-direction: column;
-  }
-
   nav ul li {
+    display: block;
     margin: 10px 0;
   }
 
