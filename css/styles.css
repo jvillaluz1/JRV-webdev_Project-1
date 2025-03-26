@@ -65,23 +65,18 @@ img {
 
 /* Navigation Bar Styling */
 nav {
-	background-color: #333;
 	margin-bottom: 40px;
-	padding: 10px 0;
-	border-radius: 8px;
 }
 
 nav ul {
 	list-style-type: none;
 	padding: 0;
-	margin: 0;
 	text-align: center;
-	overflow: hidden;
 }
 
 nav ul li {
 	display: inline-block;
-	margin-right: 20px;
+	margin-right: 0 20px;
 }
 
 nav ul li a {
@@ -91,19 +86,11 @@ nav ul li a {
 	text-transform: uppercase;
 	border-bottom: 2px solid transparent;
 	padding: 10px 15px;
-	transition: border-bottom 0.3s ease, background-color 0.3s ease;
+	transition: border-bottom 0.3s ease;
 }
 
 nav ul li a:hover {
 	border-bottom: 2px solid #ffd000;
-	background-color: #444;
-}
-
-/* Clearfix for nav to ensure elements are contained */
-nav::after {
-	content: "";
-	display: table;
-	clear: both;
 }
 
 /* List Styling */
