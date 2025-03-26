@@ -1,13 +1,6 @@
 /* Import Press Start 2P Font */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* MSU Color Palette */
-:root {
-  --msu-green: #18453B;
-  --msu-gold: #F9B112;
-  --msu-accent-green: #24635A;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +10,8 @@
 body {
   font-family: 'Press Start 2P', 'Trebuchet MS', sans-serif;
   line-height: 1.6;
-  background-color: var(--msu-green);
-  color: var(--msu-gold);
+  background-color: #4d5f37;
+  color: #ffd000;
   min-height: 100vh;
   padding: 20px;
 }
@@ -26,7 +19,7 @@ body {
 /* Header Styling */
 h1, h2, h3 {
   text-align: center;
-  color: var(--msu-gold);
+  color: #ffd000;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -39,7 +32,7 @@ h1 {
 h2 {
   font-size: 2em;
   padding-bottom: 10px;
-  border-bottom: 2px solid var(--msu-gold);
+  border-bottom: 2px solid #ffd000;
 }
 
 h3 {
@@ -67,7 +60,7 @@ img {
   max-width: 80%;
   height: auto;
   border-radius: 8px;
-  border: 5px solid var(--msu-gold);
+  border: 5px solid #ffd000;
 }
 
 /* Navigation Styling */
@@ -75,19 +68,32 @@ nav {
   margin-bottom: 40px;
 }
 
+nav::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}	
+
 nav ul {
   list-style-type: none;
   padding: 0;
   text-align: center;
+	overflow: hidden;
 }
 
 nav ul li {
-  display: inline-block;
-  margin: 0 20px;
+  float: left;
+	margin-right: 20
 }
 
 nav ul li a {
-  color: var(--msu-gold);
+  color: #ffd000;
   text-decoration: none;
   font-size: 1em;
   text-transform: uppercase;
@@ -97,7 +103,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  border-bottom: 2px solid var(--msu-gold);
+  border-bottom: 2px solid #ffd000;
 }
 
 /* List Styling */
@@ -118,7 +124,7 @@ ul li {
 
 ul li::before {
   content: '•';
-  color: var(--msu-gold);
+  color: #ffd000;
   position: absolute;
   left: 0;
 }
