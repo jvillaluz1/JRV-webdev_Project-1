@@ -10,7 +10,7 @@
 body {
   font-family: 'Press Start 2P', 'Trebuchet MS', sans-serif;
   line-height: 1.6;
-  background-color: #4d5f37;
+  background-color: #2b3d23;
   color: #ffd000;
   min-height: 100vh;
   padding: 20px;
@@ -68,17 +68,28 @@ nav {
   margin-bottom: 40px;
 }
 
-nav::after {
-	content: "";
-	display: table;
-	clear: both;
+#bul1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.clearfix::after {
+#bul1 li {
+  float: left; /* Aligns items in a row */
+  margin-right: 15px; /* Spacing between links */
+}
+
+#bul1 a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000; /* Adjust color as needed */
+}
+
+#bul1::after {
   content: "";
   display: table;
-  clear: both;
-}	
+  clear: both; /* Clears float */
+}
 
 nav ul {
   list-style-type: none;
