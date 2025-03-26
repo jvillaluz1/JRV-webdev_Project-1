@@ -26,19 +26,26 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
+  display: flex; /* Added to make header a flex container */
+  justify-content: center; /* Center the nav within the header */
 }
 
 nav {
   width: 100%;
+  max-width: 1200px; /* Added to limit nav width on large screens */
+  display: flex; /* Added to make nav a flex container */
+  justify-content: center; /* Center the ul within the nav */
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
-  text-align: center;
-  display: flex;
-  justify-content: center;
   margin: 0;
+  display: flex;
+  justify-content: center; /* Ensure li elements are centered */
+  align-items: center; /* Vertically center the links */
+  width: 100%; /* Ensure ul takes full width of nav */
+  flex-wrap: wrap; /* Allow wrapping for long link text */
 }
 
 nav ul li {
