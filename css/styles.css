@@ -141,6 +141,15 @@ ul li::before {
   text-align: center;
 }
 
+/* Styling for YouTube embed */
+iframe {
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #ffd000;
+  border-radius: 8px;
+}
+
+
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
   body {
