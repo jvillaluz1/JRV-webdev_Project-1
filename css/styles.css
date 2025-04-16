@@ -144,6 +144,12 @@ ul li::before {
 
 #bul1 {
 	list-style-tpye: none;
+}
+
+#bul1 li {
+	display: inline-block;
+	margin-right: 10px;
+}
 
 /* YouTube Embed */
 iframe {
