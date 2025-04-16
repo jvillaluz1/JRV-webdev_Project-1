@@ -167,6 +167,7 @@ iframe {
   margin: 30px auto;
   border: 5px solid #ffd000;
   border-radius: 8px;
+	display: block;
 }
 
 .map {
