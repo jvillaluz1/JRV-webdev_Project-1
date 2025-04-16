@@ -65,23 +65,23 @@ img {
 
 /* Navigation Bar Styling */
 nav {
-  background-color: #333; /* Dark background for nav */
+  background-color: transparent; /* Removed gray background */
   margin-bottom: 40px;
   padding: 10px 0;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center contents */
 }
 
 nav ul {
-  list-style-type: none;
+  display: inline-block;
   padding: 0;
-  margin: 0;
-  text-align: center;
+  margin: 0 auto;
+  list-style: none;
 }
 
 nav ul li {
   display: inline-block;
-  margin-right: 20px;
+  margin: 0 15px;
 }
 
 nav ul li a {
@@ -99,7 +99,7 @@ nav ul li a:hover {
   background-color: #444;
 }
 
-/* Clearfix for nav to ensure elements are contained */
+/* Clearfix */
 nav::after {
   content: "";
   display: table;
@@ -129,7 +129,7 @@ ul li::before {
   left: 0;
 }
 
-/* Bullet pointed list styling */
+/* Bullet-pointed lists in divs */
 #bul1, #bul2 {
   display: flex;
   flex-direction: column;
@@ -141,7 +141,7 @@ ul li::before {
   text-align: center;
 }
 
-/* Styling for YouTube embed */
+/* YouTube Embed */
 iframe {
   display: block;
   margin: 20px auto;
@@ -149,7 +149,7 @@ iframe {
   border-radius: 8px;
 }
 
-/* Google Maps Styling */
+/* Google Maps */
 #map {
   height: 500px;
   width: 80%;
@@ -163,7 +163,7 @@ iframe {
   margin-bottom: 40px;
 }
 
-/* Styling to make the google map page match the color */
+/* Match Google Maps InfoWindow Styling */
 .gm-style .gm-style-iw-c {
   background-color: #2b3d23 !important;
   color: #ffd000 !important;
@@ -184,30 +184,26 @@ iframe {
   body {
     padding: 10px;
   }
-
   h1 {
     font-size: 2em;
   }
-
   h2 {
     font-size: 1.8em;
   }
-
   h3 {
     font-size: 1.5em;
   }
-
   nav ul li {
     display: block;
     margin: 10px 0;
   }
-
   p, ul {
     font-size: 0.9em;
     padding: 5px;
   }
 }
 
+/* Canvas Stuff */
 #wrapper {
   width: 850px;
   height: 600px;
