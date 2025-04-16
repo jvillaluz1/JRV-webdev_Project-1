@@ -2,7 +2,7 @@
 
 // Initialize and add the map
 function initMap() {
-    // The location to center on (example: San Francisco)
+    // Centering on Prospero
     const center = {lat: 45.6925, lng: -121.5519};
     
     // The map, centered at the chosen location
