@@ -65,18 +65,24 @@ img {
 
 /* Navigation Bar Styling */
 nav {
+	background-color: #333;
 	margin-bottom: 40px;
+	padding: 10px 0;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
 	list-style-type: none;
 	padding: 0;
+	margin: 0;
 	text-align: center;
+	overflow: hidden;
 }
 
 nav ul li {
 	display: inline-block;
-	margin-right: 0 20px;
+	margin-right: 20px;
 }
 
 nav ul li a {
@@ -86,11 +92,19 @@ nav ul li a {
 	text-transform: uppercase;
 	border-bottom: 2px solid transparent;
 	padding: 10px 15px;
-	transition: border-bottom 0.3s ease;
+	transition: border-bottom 0.3s ease, background-color 0.3s ease;
 }
 
 nav ul li a:hover {
 	border-bottom: 2px solid #ffd000;
+	background-color: #444;
+}
+
+/* Clearfix for nav to ensure elements are contained */
+nav::after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 /* List Styling */
@@ -136,33 +150,62 @@ iframe {
   border-radius: 8px;
 }
 
+/* Google Maps Styling */
+#map {
+  height: 500px;
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+  border: 5px solid #ffd000;
+  border-radius: 8px;
+}
+.map {
+  margin-bottom: 40px;
+}
+/* Styling to make the google map page match the color  */
+.gm-style .gm-style-iw-c {
+  background-color: #2b3d23 !important;
+  color: #ffd000 !important;
+  font-family: 'Press Start 2P', 'Trebuchet MS', sans-serif !important;
+  padding: 12px !important;
+}
+.gm-style .gm-style-iw-d {
+  overflow: hidden !important;
+}
+.gm-style .gm-style-iw-t::after {
+  background: #2b3d23 !important;
+}
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
   body {
     padding: 10px;
   }
-
   h1 {
     font-size: 2em;
   }
-
   h2 {
     font-size: 1.8em;
   }
-
   h3 {
     font-size: 1.5em;
   }
-
   nav ul li {
     display: block;
     margin: 10px 0;
   }
-
   p, ul {
     font-size: 0.9em;
     padding: 5px;
-  }
+	
+	}
+}
+#map {
+  height: 500px;
+  width: 80%;
+	max-width: 900px;
+	margin: 30px auto;
+	border: 5px solid #ffd000;
+	border-radius: 8px;
 }
 
 #wrapper {
@@ -172,7 +215,6 @@ iframe {
 	margin:0 auto;
 	overflow: hidden;
 }
-
 #canvas {
 	width: 700px;
 	height: 500px;
