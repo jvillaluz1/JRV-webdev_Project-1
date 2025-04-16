@@ -110,7 +110,7 @@ nav::after {
 /* List Styling */
 ul {
   list-style-type: none;
-  margin: 15px auto;
+  margin: auto;
   max-width: 900px;
   padding: 10px;
   background-color: rgba(249, 177, 18, 0.1);
@@ -167,7 +167,6 @@ iframe {
   margin: 30px auto;
   border: 5px solid #ffd000;
   border-radius: 8px;
-	display: block;
 }
 
 .map {
