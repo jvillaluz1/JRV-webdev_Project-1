@@ -1,0 +1,230 @@
+/* Import Press Start 2P Font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', 'Trebuchet MS', sans-serif;
+  line-height: 1.6;
+  background-color: #2b3d23;
+  color: #ffd000;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header Styling */
+h1, h2, h3 {
+  text-align: center;
+  color: #ffd000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 2em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ffd000;
+}
+
+h3 {
+  font-size: 1.5em;
+  padding-bottom: 8px;
+  margin-top: 15px;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 1em;
+  margin: 15px auto;
+  max-width: 900px;
+  text-align: justify;
+  line-height: 1.8;
+  padding: 10px;
+  background-color: rgba(249, 177, 18, 0.1);
+  border-radius: 8px;
+}
+
+/* Image Styling */
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+  border: 5px solid #ffd000;
+}
+
+/* Navigation Bar Styling */
+nav {
+  background-color: transparent; /* Removed gray background */
+  margin-bottom: 40px;
+  padding: 10px 0;
+  border-radius: 8px;
+  text-align: center; /* Center contents */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffd000;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  padding: 10px 15px;
+  transition: border-bottom 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #ffd000;
+  background-color: #444;
+}
+
+/* Clearfix */
+nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* List Styling */
+ul {
+  list-style-type: none;
+  margin: auto;
+  max-width: 900px;
+  padding: 10px;
+  background-color: rgba(249, 177, 18, 0.1);
+  border-radius: 8px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+ul li::before {
+  content: '*';
+  color: #ffd000;
+  position: absolute;
+  left: 0;
+}
+
+/* Bullet-pointed lists in divs */
+#bul2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bul2 li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+#bul1 {
+	list-style: none;
+}
+
+#bul1 li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+/* YouTube Embed */
+iframe {
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #ffd000;
+  border-radius: 8px;
+}
+
+/* Google Maps */
+#map {
+  height: 500px;
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+  border: 5px solid #ffd000;
+  border-radius: 8px;
+}
+
+.map {
+  margin-bottom: 40px;
+}
+
+/* Match Google Maps InfoWindow Styling */
+.gm-style .gm-style-iw-c {
+  background-color: #2b3d23 !important;
+  color: #ffd000 !important;
+  font-family: 'Press Start 2P', 'Trebuchet MS', sans-serif !important;
+  padding: 12px !important;
+}
+
+.gm-style .gm-style-iw-d {
+  overflow: hidden !important;
+}
+
+.gm-style .gm-style-iw-t::after {
+  background: #2b3d23 !important;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+  p, ul {
+    font-size: 0.9em;
+    padding: 5px;
+  }
+}
+
+/* Canvas Stuff */
+#wrapper {
+  width: 850px;
+  height: 600px;
+  background-color: #2b3d23;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#canvas {
+  width: 700px;
+  height: 500px;
+  background-color: #ffd000;
+  margin: 30px auto;
+}
